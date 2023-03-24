@@ -1,0 +1,169 @@
+.section__form {
+    margin-top: 150px;
+    height: 478px;
+    background: url('../img/salob-bg.png');
+    @media (max-width: $breakpoint768){
+        height: 600px;
+    }
+}
+.container {
+    &__form {
+        height: 100%;
+    }
+}
+.contact {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+		// .contact__item
+	&__item {
+        &.right__item {
+            margin-top: 60px;
+            display: flex;
+            align-items: center;
+            gap: 80px;
+            @media (max-width: $breakpoint992){
+                flex-wrap: wrap-reverse;
+            }
+        }  
+    }
+	// .contact__text
+	&__subtitle {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 140%;
+        text-align: center;
+        color: #fff;
+        @media (max-width: $breakpoint992){
+            font-size: 18px;
+        }
+        @media (max-width: $breakpoint768){
+            font-size: 16px;
+        }
+        @media (max-width: $breakpoint480){
+            font-size: 14px;
+        }
+    }
+    // .contact__title
+	&__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 41px;
+        text-align: center;
+        color: #fff;
+        margin-top: 15px;
+        @media (max-width: $breakpoint992){
+            font-size: 28px;
+        }
+        @media (max-width: $breakpoint768){
+            font-size: 26px;
+        }
+        @media (max-width: $breakpoint480){
+            font-size: 24px;
+        }
+    }
+}
+.form {
+    
+    &__field {
+        padding: 14px 15px;
+        border: 1px solid #fff;
+        @media (max-width: $breakpoint992){
+            flex: 0 1 100%;
+        }
+    }
+    &__btn {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #fff;
+        padding: 16px 35px;
+        background: #333333;
+    }
+
+    &__input {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #333333;
+        padding: 15px 87px 14px 20px;
+        outline: none;
+        border: 1px solid #D6D6D6;
+        &::placeholder {
+            color: rgba(51, 51, 51, 0.5);;
+        }
+        @media (max-width: $breakpoint992){
+            width: 100%;
+        }
+        @media (max-width: $breakpoint480){
+            flex: 0 1 100%;
+            padding: 15px 0;
+        }
+    }
+}
+.properties {
+    @media (max-width: $breakpoint992){
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: space-between;
+        gap: 49px;
+    }
+    @media (max-width: $breakpoint768){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+}
+.properties-item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #fff;
+    padding-left: 10px;
+    list-style-image: url('../img/list-style.svg');
+    @media (max-width: $breakpoint992){
+        font-size: 16px;
+        margin: 0 20px;
+    }
+    @media (max-width: $breakpoint768){
+        font-size: 14px;
+        margin: 0 20px;
+    }
+    @media (max-width: $breakpoint480){
+        font-size: 12px;
+        margin: 0 auto;
+    }
+}
+.mail {
+    display: flex;
+    gap: 15px;
+    background: #fff;
+    padding: 20px 22px;
+    border: 1px solid #fff;
+    @media (max-width: $breakpoint992){
+        justify-content: space-between;
+    }
+    @media (max-width: $breakpoint480){
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.footer {
+}

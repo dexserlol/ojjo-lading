@@ -1,0 +1,92 @@
+.section {
+    // .section__salon
+    &__salon {
+        height: 541px;
+        background: url('../img/salon-bg.png') center;
+        margin-top: 133px;
+    }
+}
+.container__salon {
+    height: 100%;
+}
+.salon {
+    height: 100%;
+    &__item {
+        flex: 0 1 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    // .salon__subtitle
+    &__subtitle {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 140%;
+        color: #fff;
+        margin-bottom: 15px;
+        @media (max-width: $breakpoint768){
+            font-size: 19px;
+        }
+        @media (max-width: $breakpoint480){
+            font-size: 17px;
+        }
+    }
+    // .salon__title
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 41px;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 45px;
+        @media (max-width: $breakpoint768){
+            font-size: 26px;
+        }
+        @media (max-width: $breakpoint480){
+            font-size: 23px;
+        }
+    }
+    // .salon__text
+    &__text {
+        max-width: 730px;
+        width: 100%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 60px;
+        @media (max-width: $breakpoint768){
+            font-size: 16px;
+        }
+        @media (max-width: $breakpoint480){
+            font-size: 14px;
+        }
+    }
+    // .salon__btn
+    &__btn {
+        display: inline-block;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #333333;
+        padding: 15px 35px;
+        background: #fff;
+        transition: .3s all;
+        cursor: pointer;
+        &:hover {
+            background: darken($color: #fff, $amount: 20);
+        }
+    }
+}
+.btn {
+}
